@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/*-----------
+共通設定
+-------------*/
 html {
   font-size: 62.5%;
 }
@@ -22,6 +25,16 @@ a:hover,
 a:active {
   color: #d03c56;
   text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /*-----------
@@ -95,6 +108,60 @@ a:active {
   width: 660px;
 }
 
+.hot-topic {
+  display: block;
+  height: 300px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.15s;
+}
+
+.hot-topic:hover {
+  opacity: 0.85;
+}
+
+.hot-topic .image {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.hot-topic .content {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 105px 25px 0;
+  background-color: #2d3d54;
+  line-height: 1.6;
+}
+
+.hot-topic .title {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.hot-topic .desc {
+  color: #ddc;
+}
+
+.hot-topic .date {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 140px;
+  padding: 4px;
+  background-color: #fff;
+  color: #2d3d54;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
 .sidemenu {
   float: right;
   width: 275px;
@@ -102,10 +169,4 @@ a:active {
 
 .footer {
   width: 100%;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
 }
