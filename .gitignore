@@ -2,3 +2,6 @@ standard-layout/images
 standard-layout/css/reset.css
 grid-layout/images
 grid-layout/css/reset.css
+single-layout/css/normalize.css
+single-layout/images
+single-layout/lib
