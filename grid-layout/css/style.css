@@ -99,3 +99,17 @@ a:active {
 .item-breaktime .category::before {
   border-color: #c1efff;
 }
+
+/*
+中BOX
+--------*/
+.item-m {
+  width: 364px;
+}
+
+/*
+大BOX
+--------*/
+.item-l {
+  width: 732px;
+}
